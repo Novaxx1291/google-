@@ -119,9 +119,14 @@ function updatetabs() {
   printIndex(indexSheet,indexSheetNames,indexSheetIds);
 }
 
+//Return the current sheet name.
+function SheetName() {
+return SpreadsheetApp.getActiveSpreadsheet().getActiveSheet().getName();
+}
 
 // function to print out the index
 function printIndex(sheet,names,formulas) {
 
   sheet.getRange(2,1).setValue('=sheetname("=RANDBETWEEN()")';
+
 }
